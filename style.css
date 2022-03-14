@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+
+
+:root {
+  --blue: #EAF0F8;
+}
+
+body {
+  margin-top: 40px;
+  background: var(--blue);
+  font-family: 'Roboto Mono', monospace;
+  background: #e0e0e0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 60px 300px auto auto;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cards div{
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow:  5px 5px 10px #bebebe,
+             -5px -5px 10px #ffffff;
+}
+
+.cards div img {
+  width: 230px;
+  border-radius: 20px;
+}
+
+.cards {
+  display: grid;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.cards h2 {
+  margin-top: 40px;
+  font-size: 1.3rem;
+}
+
+.cards h3 {
+  margin-top: -15px;
+  font-size: 1rem;
+}
+
+.progress-bar {
+  display: grid;
+  grid-template-columns: repeat(2, 18.75px) 1fr repeat(2, 18.75px);
+  grid-template-rows: 10px 1fr;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.progress-bar .bar {
+  grid-column: 3;
+  position: relative;
+  width: 300px;
+  height: 8px;
+  clip-path: polygon()(82% 10% 16% 10%);
+  background: linear-gradient(90deg, rgba(0,0,0,0.5928965336134453) 0%, rgba(190,190,190,1) 57%, rgba(190,190,190,1) 100%);
+  border-radius: 20px;
+}
+
+.progress-bar .bar .dot {
+  position: absolute;
+  left: 100px;
+  top: -3px;
+  width: 15px;
+  height: 15px;
+  background-color: #bebebe;
+  clip-path: circle(100%);
+  border-radius: 50%;
+}
+
+.progress-bar .start {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 12px;
+  font-weight: 500;
+}
+.progress-bar .end {
+  position: relative;
+  left: -4px;
+  justify-self: center;
+  grid-column: 4;
+  grid-row: 2;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -300px;
+}
+.player-buttons {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+background: #e0e0e0;
+box-shadow:  5px 5px 10px #bebebe,
+             -5px -5px 10px #ffffff;
+}
+.play {
+  margin: 0 1.5rem;
+  width: 60px;
+  height: 60px;
+  background-image: url('https://img.icons8.com/ios-glyphs/60/000000/play--v1.png');
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: center;
+}
+.shuffle {
+  margin-right: 1.6rem;
+  background-image: url('https://img.icons8.com/ios-glyphs/30/000000/shuffle.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+}
+.previously {
+  background-image: url('https://img.icons8.com/ios-glyphs/50/000000/skip-to-start--v1.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+}
+.next {
+  background-image: url('https://img.icons8.com/ios-glyphs/50/000000/end--v1.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+}
+.repeat {
+  margin-left: 1.6rem;
+  background-image: url('https://img.icons8.com/ios-glyphs/50/000000/repeat.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar {
+  width: 142px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.shuffle:hover, .previously:hover, .next:hover, .repeat:hover {
+  box-shadow: inset 5px 5px 10px #bebebe,
+            inset -5px -5px 10px #ffffff;
+}
+
+.play:hover {
+   box-shadow: inset 5px 5px 10px #bebebe,
+            inset -5px -5px 10px #ffffff;
+}
